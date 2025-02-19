@@ -24,16 +24,17 @@ This project aims to provide a simple and accessible visualization of crater gro
 
 ## Enjoy the latest up-to-date version
 The interface, using the latest version, is available here : [https://easycratersim.streamlit.app/]
-## Prerequisites
+
+## Self hosting
+If you want to host the interface by yourself
+
+### Prerequisites
 Ensure you have the following installed: 
 - Python 3.x
 - Streamlit
 - Matplotlib
 - Scipy
 - Numpy
-
-## Self hosting
-If you want to host the interface by yourself
 
 ### Installation
 ```py
