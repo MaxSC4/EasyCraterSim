@@ -49,7 +49,7 @@ This project is based on the equations and impact crater formation models descri
 # 📄 Citation
 If you use this project, please cite as follows:
 ```latex
-[M. Soares Correia]. (2025). EasyCraterSim (v1.0.0).
+M. Soares Correia. (2025). EasyCraterSim (v1.0.0). Zenodo 10.5281/zenodo.14895828
 ```
 
 # 📧 Contact 
