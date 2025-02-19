@@ -3,6 +3,8 @@
 ***O'Keefe, J. D., & Ahrens, T. J. (1999). Complex craters: Relationship of stratigraphy and rings to impact conditions. Journal of Geophysical Research: Planets, 104(E11), 27091-27104.***
 This project aims to provide a simple and accessible visualization of crater growth dynamics based on fundamental physical parameters.
 
+[https://easycratersim.streamlit.app/]
+
 # 🛰️ Scientific objectives
 - Understand the processes involved in impact crater formation.
 - Model the transition between simple and complex craters *(Work in progress)*
@@ -18,7 +20,10 @@ This project aims to provide a simple and accessible visualization of crater gro
 ## 🖼️ Interface Preview
 ![EasyCraterSim Interface](images/interface.png)
 
-# 🖥️ How to
+# 🖥️ How to use
+
+## Enjoy the latest up-to-date version
+The interface, using the latest version, is available here : [https://easycratersim.streamlit.app/]
 ## Prerequisites
 Ensure you have the following installed: 
 - Python 3.x
@@ -27,12 +32,15 @@ Ensure you have the following installed:
 - Scipy
 - Numpy
 
-## Installation
+## Self hosting
+If you want to host the interface by yourself
+
+### Installation
 ```py
 pip install streamlit matplotlib scipy numpy
 ```
 
-## Running the simulation 
+### Running
 ```
 streamlit run crater_sim.py
 ```
