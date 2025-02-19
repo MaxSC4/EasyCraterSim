@@ -1,31 +1,31 @@
 # EasyCraterSim
 **EasyCraterSim** is a lightweight numerical simulation tool designed to model the formation and evolution of impact craters based on the equations and methodologies described in the paper:
-O'Keefe, J. D., & Ahrens, T. J. (1999). Complex craters: Relationship of stratigraphy and rings to impact conditions. Journal of Geophysical Research: Planets, 104(E11), 27091-27104.
+***O'Keefe, J. D., & Ahrens, T. J. (1999). Complex craters: Relationship of stratigraphy and rings to impact conditions. Journal of Geophysical Research: Planets, 104(E11), 27091-27104.***
 This project aims to provide a simple and accessible visualization of crater growth dynamics based on fundamental physical parameters.
 
 # 🛰️ Scientific objectives
-> Understand the processes involved in impact crater formation.
-> Model the transition between simple and complex craters *(Work in progress)*
-> Study the influence of physical parameters such as gravity, impactor velocity, surface strength, and planetary density.
-> Visualize the evolution of a crater profile over time, normalized by impactor diameter.
+- Understand the processes involved in impact crater formation.
+- Model the transition between simple and complex craters *(Work in progress)*
+- Study the influence of physical parameters such as gravity, impactor velocity, surface strength, and planetary density.
+- Visualize the evolution of a crater profile over time, normalized by impactor diameter.
 
 # 📊 Features
-> Choose pre-set crater types.
-> Customize key physical parameters (gravity, impactor size, velocity, angle, temperature, etc.).
-> Visualize the crater shape at a specific time or animate its evolution.
-> Graphical output showing normalized radius and depth of the crater.
+- Choose pre-set crater types.
+- Customize key physical parameters (gravity, impactor size, velocity, angle, temperature, etc.).
+- Visualize the crater shape at a specific time or animate its evolution.
+- Graphical output showing normalized radius and depth of the crater.
 
 ## 🖼️ Interface Preview
-![EasyCraterSim Interface][]
+![EasyCraterSim Interface][images/interface.png]
 
 # 🖥️ How to
 ## Prerequisites
 Ensure you have the following installed: 
-> Python 3.x
-> Streamlit
-> Matplotlib
-> Scipy
-> Numpy
+- Python 3.x
+- Streamlit
+- Matplotlib
+- Scipy
+- Numpy
 
 ## Installation
 ```py
