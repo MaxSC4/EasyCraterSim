@@ -1,0 +1,12 @@
+[client]
+showErrorDetails = "none"
+
+[theme]
+primaryColor = "#FF9500"  
+backgroundColor = "#0A0A0A"  
+secondaryBackgroundColor = "#1C1C1C"  
+textColor = "#FFFFFF"  
+font = "monospace"  
+
+[server]
+baseUrlPath = "/958a37ea-e8bc-4691-81bc-6322c6c39b9e/port/8501/"
