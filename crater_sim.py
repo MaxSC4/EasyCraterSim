@@ -197,6 +197,22 @@ if animate:
         
         time.sleep(0.05)
 
+st.sidebar.header("☄️ More on EasyCraterSim")
 
+show_info = st.sidebar.checkbox("ℹ️ About EasyCraterSim")
+show_contact = st.sidebar.checkbox("📬 Contact Info")
+
+if show_contact:
+    st.sidebar.write("For any questions or contributions, reach out to:")
+    st.sidebar.write("📧 Email: maxime.soares-correia@universite-paris-saclay.fr")
+    st.sidebar.write("[🌍 GitHub Repo](https://github.com/MaxSC4/EasyCraterSim)")
+
+if show_info:
+    st.sidebar.write("""
+        EasyCraterSim is a numerical simulation tool for modeling impact crater formation.
+        It is based on the work of O'Keefe & Ahrens (1999) and developed as part of the 
+        Mathematical Modeling course at Université Paris-Saclay. More on the GitHub!                     
+""")
+ 
 
 

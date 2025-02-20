@@ -18,7 +18,7 @@ This project aims to provide a simple and accessible visualization of crater gro
 - Graphical output showing normalized radius and depth of the crater.
 
 ## 🖼️ Interface Preview
-![EasyCraterSim Interface](images/interface.png)
+![EasyCraterSim Interface](images/easycratersim.png)
 
 # 🖥️ How to use
 
