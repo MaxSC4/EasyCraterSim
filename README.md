@@ -43,7 +43,7 @@ pip install streamlit matplotlib scipy numpy
 
 ### Running
 ```
-streamlit run crater_sim.py
+streamlit run app.py
 ```
 
 ## Accessing the interface
