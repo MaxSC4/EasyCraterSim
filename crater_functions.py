@@ -74,7 +74,7 @@ def solve_crater_growth(U, R_f, Z_f, alpha=0.05, beta=0.1, t_final = 1000):
     sol = solve_ivp(crater_evolution, t_span, y0, t_eval = t_eval, args=(U, R_f, Z_f, alpha, beta))
     return sol.t, sol.y[0], sol.y[1]
 
-def generate_crater_gif(t_values, R_values, Z_values, a, crater_type, filename='crater_evolution.gif'):
+def generate_crater_gif(t_values, R_values, Z_values, a, crater_type):
     """Generate an animated GIF of crater evolution"""  
     frames = []      
     fig, ax = plt.subplots(figsize=(8, 5))

@@ -4,8 +4,33 @@ from plot_craters import *
 from crater_types import crater_types
 
 
+
+
 # === STREAMLIT UI ===
-st.title("🌍 EasyCraterSim")
+st.set_page_config(
+    page_title="EasyCraterSim", 
+    page_icon="☄️",
+    menu_items={
+        'About': "# EasyCraterSim\nEasyCraterSim is a numerical simulation tool for modeling impact crater formation. It is based on the work of O'Keefe & Ahrens (1999) and developed as part of the Mathematical Modeling course at Université Paris-Saclay. More on the GitHub!\nby M. Soares Correia"
+    }
+    )
+
+style = "<style>.row-widget.stButton {text-align: center; width: 300px;}</style>"
+st.markdown(style, unsafe_allow_html=True)
+
+st.markdown(
+    """<h1 style="text-align: center">
+            ☄️ EasyCraterSim
+        </h1>
+    """, unsafe_allow_html=True)
+
+st.markdown(
+    """<div style="text-align: center">
+            <i>by M. Soares Correia</i>
+        </div>
+    """, unsafe_allow_html=True)
+
+st.divider()
 
 # === SIDERBAR ===
 st.sidebar.header("☄️ More on EasyCraterSim")
@@ -24,6 +49,7 @@ if show_info:
         It is based on the work of O'Keefe & Ahrens (1999) and developed as part of the 
         Mathematical Modeling course at Université Paris-Saclay. More on the GitHub!                     
 """)
+    st.sidebar.write("M. Soares Correia")
 
 # === CRATER CHOICES ===
 crater_choice = st.selectbox("Choose a predefined crater type:", list(crater_types.keys()))
@@ -54,7 +80,7 @@ Z_current = Z_values[t_index]
 
 # === DISPLAY BUTTONS ===
 with st.container():
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3, gap="large", vertical_alignment="center")
 
     with col1:
         simulate_button = st.button("🚀 Simulate")
@@ -62,7 +88,6 @@ with st.container():
     with col2:
         animate_button = st.button("☄️ Animate")
         
-
     with col3:
         generate_button = st.button("🎬 Generate GIF")
 
