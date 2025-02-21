@@ -7,15 +7,17 @@ This project aims to provide a simple and accessible visualization of crater gro
 
 # 🛰️ Scientific objectives
 - Understand the processes involved in impact crater formation.
-- Model the transition between simple and complex craters *(Work in progress)*
+- Model the transition between simple and complex craters *(WIP)*
 - Study the influence of physical parameters such as gravity, impactor velocity, surface strength, and planetary density.
 - Visualize the evolution of a crater profile over time, normalized by impactor diameter.
 
 # 📊 Features
-- Choose pre-set crater types.
+- Choose pre-set crater types (Chicxulub, Meteor Crater, Tycho, Copernicus, and more).
 - Customize key physical parameters (gravity, impactor size, velocity, angle, temperature, etc.).
 - Visualize the crater shape at a specific time or animate its evolution.
 - Graphical output showing normalized radius and depth of the crater.
+- Download a GIF showcasing the evolution of the crater
+- Choose between **Single Crater Simulation** or **Comparison Mode** *(WIP)*
 
 ## 🖼️ Interface Preview
 ![EasyCraterSim Interface](images/easycratersim.png)
@@ -58,7 +60,7 @@ This project is based on the equations and impact crater formation models descri
 # 📄 Citation
 If you use this project, please cite as follows:
 ```latex
-M. Soares Correia. (2025). EasyCraterSim (v1.0.0). Zenodo 10.5281/zenodo.14895828
+M. Soares Correia. (2025). EasyCraterSim (v1.1.0). Zenodo 10.5281/zenodo.14895828
 ```
 
 # 📧 Contact 
