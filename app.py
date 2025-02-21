@@ -1,7 +1,7 @@
 import streamlit as st
-from EasyCraterSim.utils.crater_functions import *
-from plot_craters import *
-from EasyCraterSim.utils.crater_types import crater_types
+from utils.crater_functions import *
+from utils.plot_craters import *
+from utils.crater_types import crater_types
 
 # === STREAMLIT UI ===
 st.set_page_config(

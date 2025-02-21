@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import os
-from EasyCraterSim.utils.crater_functions import *
+from utils.crater_functions import *
 
 def simulate(dp, Dp, crater_type, R_current, Z_current, params, t_slider):
     st.write("### Results")

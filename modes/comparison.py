@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from EasyCraterSim.utils.crater_functions import *
-from EasyCraterSim.utils.crater_types import crater_types
+from utils.crater_functions import *
+from utils.crater_types import crater_types
 
 st.markdown(
     """<h2 style="text-align: center">
