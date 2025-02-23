@@ -19,6 +19,11 @@ This project aims to provide a simple and accessible visualization of crater gro
 - Download a GIF showcasing the evolution of the crater
 - Choose between **Single Crater Simulation** or **Comparison Mode** *(WIP)*
 
+# 🧠 Work in progress
+- **Comparison Mode :** A new mode able to compare two craters, either side by side or by overlaying
+- **Multipages :** Handling multipages on Streamlit to make the UI even clearer!
+- **Reverse Simulation :** Choose a crater and EasyCraterSim will estimate the impactor's parameters!
+
 ## 🖼️ Interface Preview
 ![EasyCraterSim Interface](images/easycratersim.png)
 
@@ -60,7 +65,7 @@ This project is based on the equations and impact crater formation models descri
 # 📄 Citation
 If you use this project, please cite as follows:
 ```latex
-M. Soares Correia. (2025). EasyCraterSim (v1.1.0). Zenodo 10.5281/zenodo.14895828
+M. Soares Correia. (2025). EasyCraterSim (v1.1.0). 10.5281/zenodo.14895828
 ```
 
 # 📧 Contact 
