@@ -105,7 +105,7 @@ def generate_crater_gif(t_values, R_values, Z_values, a, crater_type):
         ax.legend()
         ax.set_xlim(-1.5 * r_crater, 1.5 * r_crater)
         ax.set_ylim(-3, 3)
-        ax.text(0.02, 0.9, f"T = {t_values[frame]:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
+        ax.text(0.02, 0.9, f"Ut/a = {t_values[frame]:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
 
         fig.canvas.draw()
         image = np.array(fig.canvas.renderer.buffer_rgba())
@@ -117,3 +117,8 @@ def generate_crater_gif(t_values, R_values, Z_values, a, crater_type):
     
     return temp_path
 
+def estimate_impactor(Dp_final, g, rho_planet, delta_impactor_guess=2.7, velocity_guess=20):
+    """Estimate impactor parameters based on crater params"""
+    a = (Dp_final / (1.82 * (rho_planet / delta_impactor_guess) ** -0.26 * (g * Dp_final / velocity_guess ** 2) ** -0.22))
+
+    return a

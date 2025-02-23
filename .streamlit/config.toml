@@ -1,5 +1,6 @@
 [client]
 showErrorDetails = "none"
+showSidebarNavigation = false
 
 [theme]
 primaryColor = "#FF9500"  

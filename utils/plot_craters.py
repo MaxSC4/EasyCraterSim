@@ -32,7 +32,7 @@ def simulate(dp, Dp, crater_type, R_current, Z_current, params, t_slider):
     ax.set_xlim(-1.5 * r_crater, 1.5 * r_crater)
     ax.set_ylim(-3, 3)
     
-    ax.text(0.02, 0.9, f"T = {t_slider:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
+    ax.text(0.02, 0.9, f"Ut/a = {t_slider:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
     
     st.pyplot(fig)
 
@@ -68,7 +68,7 @@ def animate(dp, Dp, crater_type, R_values, Z_values, params, t_values):
         ax.legend()
         ax.set_xlim(-1.5 * r_crater, 1.5 * r_crater)
         ax.set_ylim(-3, 3)
-        ax.text(0.02, 0.9, f"T = {t_values[frame]:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
+        ax.text(0.02, 0.9, f"Ut/a = {t_values[frame]:.1f}", transform=ax.transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
         
         placeholder.pyplot(fig)
         plt.close(fig)
