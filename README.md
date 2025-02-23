@@ -1,4 +1,4 @@
-# EasyCraterSim 1.1.0
+# EasyCraterSim 1.2.0
 **EasyCraterSim** is a lightweight numerical simulation tool designed to model the formation and evolution of impact craters based on the equations and methodologies described in the paper:
 ***O'Keefe, J. D., & Ahrens, T. J. (1999). Complex craters: Relationship of stratigraphy and rings to impact conditions. Journal of Geophysical Research: Planets, 104(E11), 27091-27104.***
 This project aims to provide a simple and accessible visualization of crater growth dynamics based on fundamental physical parameters.
@@ -18,11 +18,10 @@ This project aims to provide a simple and accessible visualization of crater gro
 - Graphical output showing normalized radius and depth of the crater.
 - Download a GIF showcasing the evolution of the crater
 - Choose between **Single Crater Simulation** or **Comparison Mode** *(WIP)*
+- **Reverse Simulation** : Choose crater parameters (depth and diameter) and EasyCraterSim will estimate multiple impact scenarios and establish a similarity score with known craters! (Also features random scenarios!)
 
 # 🧠 Work in progress
 - **Comparison Mode :** A new mode able to compare two craters, either side by side or by overlaying
-- **Multipages :** Handling multipages on Streamlit to make the UI even clearer!
-- **Reverse Simulation :** Choose a crater and EasyCraterSim will estimate the impactor's parameters!
 
 ## 🖼️ Interface Preview
 ![EasyCraterSim Interface](images/easycratersim.png)
