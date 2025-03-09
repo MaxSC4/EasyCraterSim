@@ -1,4 +1,5 @@
 # EasyCraterSim 1.2.0
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14911870.svg)](https://doi.org/10.5281/zenodo.14911870)
 **EasyCraterSim** is a lightweight numerical simulation tool designed to model the formation and evolution of impact craters based on the equations and methodologies described in the paper:
 ***O'Keefe, J. D., & Ahrens, T. J. (1999). Complex craters: Relationship of stratigraphy and rings to impact conditions. Journal of Geophysical Research: Planets, 104(E11), 27091-27104.***
 This project aims to provide a simple and accessible visualization of crater growth dynamics based on fundamental physical parameters.
