@@ -66,7 +66,7 @@ This project is based on the equations and impact crater formation models descri
 # 📄 Citation
 If you use this project, please cite as follows:
 ```latex
-M. Soares Correia. (2025). EasyCraterSim (v1.2.0). 10.5281/zenodo.14895828
+SOARES CORREIA, M. (2025). EasyCraterSim : Lightweight numerical simulation tool to model the formation and evolution of impact craters (v1.2.0). Université Paris-Saclay. https://doi.org/10.5281/zenodo.14911870
 ```
 
 # 📧 Contact 
