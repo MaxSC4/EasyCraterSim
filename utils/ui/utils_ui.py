@@ -8,7 +8,8 @@ def show_sidebar():
     st.sidebar.subheader("📃 Pages")
 
     st.sidebar.page_link("app.py", label="Impact Crater Simulation", icon="☄️")
-    st.sidebar.page_link("pages/reverse_sim.py", label="Reverse Simulation (WIP)", icon="🔙")
+    st.sidebar.page_link("pages/reverse_sim.py", label="Reverse Simulation", icon="🔙")
+    st.sidebar.page_link("pages/games.py", label="Games", icon="🎮")
     st.sidebar.page_link("pages/about.py", label="About", icon="📄")
 
     st.sidebar.divider()

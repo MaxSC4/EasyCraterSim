@@ -1,0 +1,122 @@
+CRATERS = [
+    {
+        "name": "Chicxulub",
+        "diameter": 150,
+        "depth": 30,
+        "energy": 10**23,
+        "impactor_radius": 10,
+        "impactor_speed": 20,
+        "planet": "Earth",
+        "hint": "This crater is linked to the extinction of the dinosaurs.",
+        "image": "images/craters/earth/chicxulub.jpg",
+        "caption": "Post-impact view of the Chicxulub crater in the Yucatan Peninsula. In this view, early Tertiary vegetation covers the land, but the crater has not yet been buried by seafloor sediments. (LPI USRA)"
+    },
+    {
+        "name": "Meteor Crater",
+        "diameter": 1.2,
+        "depth": 0.17,
+        "energy": 10**19,
+        "impactor_radius": 0.05,
+        "impactor_speed": 15,
+        "planet": "Earth",
+        "hint": "A well-preserved impact crater in Arizona, USA.",
+        "image": "images/craters/earth/meteor_crater.jpg",
+        "caption": "Meteor Crater, Arizona, USA (NASA)"
+    },
+    {
+        "name": "Tycho",
+        "diameter": 86,
+        "depth": 4.8,
+        "energy": 10**22,
+        "impactor_radius": 8,
+        "impactor_speed": 20,
+        "planet": "Moon",
+        "hint": "One of the brightest craters on the Moon, visible with the naked eye.",
+        "image": "images/craters/moon/tycho.jpg",
+        "caption": "Tycho Crater's Central Peak on the Moon (NASA)"
+    },
+    {
+        "name": "Gale",
+        "diameter": 154,
+        "depth": 5,
+        "energy": 10**22,
+        "impactor_radius": 12,
+        "impactor_speed": 18,
+        "planet": "Mars",
+        "hint": "The Curiosity rover landed here to explore ancient Martian environments.",
+        "image": "images/craters/mars/gale.jpg",
+        "caption": "Gale Crater's Surface Materials (NASA)"
+    },
+    {
+        "name": "Vredefort",
+        "diameter": 300,
+        "depth": 40,
+        "energy": 10**24,
+        "impactor_radius": 15,
+        "impactor_speed": 25,
+        "planet": "Earth",
+        "hint": "This is the largest confirmed impact structure on Earth, located in South Africa, and over 2 billion years old.",
+        "image": "images/craters/earth/vredefort.jpg",
+        "caption": "Satellite view of Vredefort's Crater (PLANETOBSERVER)"
+    },
+    {
+        "name": "Sudbury",
+        "diameter": 250,
+        "depth": 15,
+        "energy": 10**23,
+        "impactor_radius": 12,
+        "impactor_speed": 22,
+        "planet": "Earth",
+        "image": "images/craters/earth/sudbury.jpg",
+        "hint": "One of the oldest impact craters on Earth, this Canadian structure is rich in nickel and was heavily modified by geological processes.",
+        "caption": "Sudbury's impact structure (CRATEREXPLORER)"
+    },
+    {
+        "name": "Popigai",
+        "diameter": 100,
+        "depth": 8,
+        "energy": 10**22,
+        "impactor_radius": 5,
+        "impactor_speed": 18,
+        "planet": "Earth",
+        "hint": "A Siberian impact crater known for its massive deposits of impact diamonds, created by extreme shock pressure.",
+        "image": "images/craters/earth/popigai.jpg",
+        "caption": "Popigaï Crater (NASA)"
+    },
+    {
+        "name": "Copernicus",
+        "diameter": 93,
+        "depth": 3.8,
+        "energy": 10**22,
+        "impactor_radius": 7,
+        "impactor_speed": 20,
+        "planet": "Moon",
+        "hint": "A young, well-preserved lunar crater with bright ejecta rays, making it highly visible even with a small telescope.",
+        "image": "images/craters/moon/copernicus.png",
+        "caption": "Copernicus Crater (LROC WAS image mosaic)"
+    },
+    {
+        "name": "Hellas Planitia",
+        "diameter": 2300,
+        "depth": 9,
+        "energy": 10**25,
+        "impactor_radius": 50,
+        "impactor_speed": 30,
+        "planet": "Mars",
+        "hint": "The largest known impact basin on Mars, over 2,000 km wide, possibly once filled with water or ice.",
+        "image": "images/craters/mars/hellas_planitia.jpg",
+        "caption": "Hellas Planitia (NASA)"
+    },
+    {
+        "name": "South Pole-Aitken",
+        "diameter": 2500,
+        "depth": 13,
+        "energy": 10**26,
+        "impactor_radius": 55,
+        "impactor_speed": 30,
+        "planet": "Moon",
+        "hint": "The largest and oldest impact basin on the Moon, spanning nearly the entire lunar south pole region.",
+        "image": "images/craters/moon/spa.jpg",
+        "caption": "Lunar South Pole-Aitken Basin (LPI USRA)"
+    }
+]

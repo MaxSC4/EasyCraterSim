@@ -3,6 +3,8 @@ import random
 import streamlit as st
 import pandas as pd
 
+from utils.craters_database import CRATERS
+
 known_craters = {
     "Chicxulub": {"Dp": 150000, "depth": 30000, "a": 10000, "u": 25000, "energy": 10**23},
     "Meteor Crater": {"Dp": 1200, "depth": 170, "a": 500, "u": 15000, "energy": 10**19},
@@ -43,15 +45,15 @@ def similarity_score(Dp, depth, a, energy):
     """
     scores = {}
 
-    for name, crater in known_craters.items():
-        d_score = abs(Dp - crater["Dp"]) / max(crater["Dp"], 1)
-        depth_score = abs(depth - crater["depth"]) / max(crater["depth"], 1)
-        impactor_score = abs(a - crater["a"]) / max(crater["a"], 1)
+    for crater in CRATERS:
+        d_score = abs(Dp - (crater["diameter"] * 1000)) / max(crater["diameter"] * 1000, 1)
+        depth_score = abs(depth - (crater["depth"] * 1000)) / max(crater["depth"] * 1000, 1)
+        impactor_score = abs(a - (crater["impactor_speed"] * 1000)) / max(crater["impactor_speed"] * 1000, 1)
         energy_score = abs(energy - crater["energy"]) / max(crater["energy"], 1)
 
         total_score = (0.25 * d_score) + (0.25 * depth_score) + (0.25 * impactor_score) + (0.25 * energy_score)
 
-        scores[name] = max(0, (1 - total_score) * 100)  
+        scores[crater["name"]] = max(0, (1 - total_score) * 100)
 
     sorted_scores = dict(sorted(scores.items(), key=lambda x: x[1], reverse=True)[:3])
     return sorted_scores
