@@ -5,14 +5,15 @@ import difflib
 from utils.ui.utils_ui import *
 from utils.craters_database import CRATERS
 
-def clear_session(user_guess):
+def clear_session():
     keys = list(st.session_state.keys())
     for key in keys:
         st.session_state.pop(key)
-    user_guess = ""
 
-def clear_text():
-    st.session_state.text = ""
+def submit_guess():
+    st.session_state.text = st.session_state.widget
+    if "widget" not in st.session_state:
+        st.session_state.widget = ""
 
 def guess_the_crater():
     if "selected_crater" not in st.session_state:
@@ -23,6 +24,8 @@ def guess_the_crater():
         st.session_state.attempts = 0 
     if "text" not in st.session_state:
         st.session_state.text = "✍️ Type the crater name:"
+    if "widget" not in st.session_state:
+        st.session_state.widget = ""
 
     selected_crater = st.session_state.selected_crater
 
@@ -36,10 +39,11 @@ def guess_the_crater():
     if st.session_state.show_hint:
         st.write(f"💡 **Hint:** {selected_crater['hint']}")
 
-    user_guess = st.text_input(st.session_state.text, on_change=clear_text).strip()
+    st.text_input("✍️ Type the crater name:", key="widget",on_change=submit_guess).strip()
+    user_text = st.session_state.text
 
     crater_names = [c["name"] for c in CRATERS]
-    close_matches = difflib.get_close_matches(user_guess, crater_names, n=1, cutoff=0.8)
+    close_matches = difflib.get_close_matches(user_text, crater_names, n=1, cutoff=0.8)
 
     if st.button("Submit Guess"):
         st.session_state.attempts += 1  
@@ -54,7 +58,7 @@ def guess_the_crater():
 
             st.image(selected_crater["image"], caption=selected_crater["caption"], use_container_width=True)
 
-            st.button("Try Another Crater", on_click=clear_session(user_guess))
+            st.button("Try Another Crater", on_click=clear_session)
         else:
             st.error("❌ Wrong guess! Try again.")
 
