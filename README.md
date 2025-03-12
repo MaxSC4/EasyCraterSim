@@ -1,4 +1,4 @@
-# EasyCraterSim 1.2.1
+# EasyCraterSim 1.2.2
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14911870.svg)](https://doi.org/10.5281/zenodo.14911870)
 
 **EasyCraterSim** is a lightweight numerical simulation tool designed to model the formation and evolution of impact craters based on the equations and methodologies described in the paper:
