@@ -10,6 +10,9 @@ def clear_session():
     for key in keys:
         st.session_state.pop(key)
 
+def clear_text():
+    st.session_state.text = ""
+
 def guess_the_crater():
     if "selected_crater" not in st.session_state:
         st.session_state.selected_crater = random.choice(CRATERS)
@@ -17,6 +20,8 @@ def guess_the_crater():
         st.session_state.show_hint = False
     if "attempts" not in st.session_state:
         st.session_state.attempts = 0 
+    if "text" not in st.session_state:
+        st.session_state.text = "✍️ Type the crater name:"
 
     selected_crater = st.session_state.selected_crater
 
@@ -30,7 +35,7 @@ def guess_the_crater():
     if st.session_state.show_hint:
         st.write(f"💡 **Hint:** {selected_crater['hint']}")
 
-    user_guess = st.text_input("✍️ Type the crater name:").strip()
+    user_guess = st.text_input(st.session_state.text, on_change=clear_text).strip()
 
     crater_names = [c["name"] for c in CRATERS]
     close_matches = difflib.get_close_matches(user_guess, crater_names, n=1, cutoff=0.8)
