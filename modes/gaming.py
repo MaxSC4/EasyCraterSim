@@ -5,10 +5,11 @@ import difflib
 from utils.ui.utils_ui import *
 from utils.craters_database import CRATERS
 
-def clear_session():
+def clear_session(user_guess):
     keys = list(st.session_state.keys())
     for key in keys:
         st.session_state.pop(key)
+    user_guess = ""
 
 def clear_text():
     st.session_state.text = ""
@@ -53,7 +54,7 @@ def guess_the_crater():
 
             st.image(selected_crater["image"], caption=selected_crater["caption"], use_container_width=True)
 
-            st.button("Try Another Crater", on_click=clear_session)
+            st.button("Try Another Crater", on_click=clear_session(user_guess))
         else:
             st.error("❌ Wrong guess! Try again.")
 
